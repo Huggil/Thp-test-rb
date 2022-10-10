@@ -18,6 +18,8 @@ def power(a, b)#exposant
     a ** b
 end
 
-def factorial
-    
+def factorial(b)
+x=1
+b.downto(1){|a| x = x * a}
+return x
 end

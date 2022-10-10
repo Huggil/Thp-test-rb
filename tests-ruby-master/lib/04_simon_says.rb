@@ -20,6 +20,8 @@ def first_word(y) #le split [] permet de délimiter une coupure içi 0 car on ve
   y.split[0]
 end
 
-def titleize
-  
+def titleize(string)
+  string_array = string.capitalize.split #la majuscule
+  string_array_capitalized = string_array.map{ |word| word.length > 3 ? word.capitalize : word }#.map permets de prendre une valeur et de la rapeller à chaque élément pour l'appliquer
+  string_capitalized = string_array_capitalized.join(" ")
 end
